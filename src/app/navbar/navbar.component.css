@@ -1,0 +1,28 @@
+
+.modal {
+    width: 300px;
+    color: aliceblue;
+    background-color: black;
+}
+.modal-content{
+    width: 300px;
+    background-color: black;
+}
+
+.list-group-item:hover{
+    background-color: #7d0101 !important;
+    cursor: pointer;
+}
+
+.navbar{
+    background-color: #7d0101;
+}
+
+.list-group-item{
+    background-color: black;
+    color: aliceblue;
+}
+
+.navbar-brand{
+    font-weight: 900;
+}

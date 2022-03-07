@@ -1,0 +1,14 @@
+<body class="b">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-3 mt-4 d-flex justify-content-center" *ngFor="let comics of allComics | async">
+            <div class="card" style="width: 18rem;">
+               <img src="{{comics.thumbnail.path || 'não possui imagem'}}/detail.jpg" class="card-img-top" alt="">
+               <div class="card-body align-itens-end bg-secondary text-light">
+                  <h5 class="card-title">{{comics.title}}</h5>
+                  <p class="card-text">{{comics.description || 'Não possui Descrição na API' }} </p>             
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
