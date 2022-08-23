@@ -1,0 +1,53 @@
+<div class="container align-items-center" style="height:100%;">
+    <div class="row d-flex justify-content-center mt-4">
+        <div class="card" style="width: 50rem;">
+            <div class="card-body">
+                <a nome="Voltar" routerLink="/" class="btn btn-primary">Voltar</a>
+                <div class="row d-flex justify-content-end">
+                    <h3 class="text-center">Preencha e leve a casa</h3>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <label for="exampleInputEmail1" class="form-label">Nome</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="exampleInputEmail1" class="form-label">Email </label>
+                        <input type="email"  class="form-control" mask='(000) 000-0000' id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="exampleInputEmail1" class="form-label">CPF</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                    <div class="col-md-4">
+                        <label for="exampleInputEmail1"  class="form-label">Cep</label>
+                        <input type="email" (change)="getcep(cep)" class="form-control" mask='(000) 000-0000' maxlength="8" [(ngModel)]="cep" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        {{cep}}
+                    </div>
+                    <div class="col-md-2">
+                        <label for="exampleInputEmail1" class="form-label">UF</label>
+    <input type="email" class="form-control"[value]="uf" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="exampleInputEmail1" class="form-label">Cidade</label>
+                        <input type="email" [value]="cidade" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="exampleInputEmail1" class="form-label">Bairro</label>
+                        <input type="email" [value]="bairro" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="exampleInputEmail1" class="form-label">Numero</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="exampleInputEmail1" class="form-label">Complemento</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-3 d-flex align-items-center justify-content-end">
+                        <app-button estilo="btn btn-success mt-4" nome="Concluir" (click)="conos()" style="float: right;"></app-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-loader></app-loader>

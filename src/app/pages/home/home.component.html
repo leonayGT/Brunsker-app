@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row gx-0 mt-4">
+        <div class="col-4" *ngFor="let imovel of imoveis">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title  text-center">{{imovel.nome}}</h5>
+                    <p class="card-text">Valor: {{imovel.valor}}</p>
+                    <p class="card-text">Quartos: {{imovel.quartos}}</p>
+                    <p class="card-text">Banheiros: {{imovel.banheiros}}</p>
+                    <p class="card-text">Data do Anuncio: {{imovel.dataAnuncio}}</p>
+                    <a href="#" class="btn btn-primary" routerLink="/cadastro">Adquirir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,39 +1,37 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './router/app-routing.module';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { CharacterComponent } from './character/character.component';
-import { ComicsComponent } from './comics/comics.component';
-import { SeriesComponent } from './series/series.component';
-import { HomeComponent } from './home/home.component';
-import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { NavbarComponent } from './shared/navbar/navbar.component';
+import { HomeComponent } from './pages/home/home.component';
+
 import { HttpClientModule} from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-
+import { ImoveisCadatroComponent } from './pages/imoveis-cadatro/imoveis-cadatro.component';
+import { InputFieldComponent } from './shared/components/input-field/input-field.component';
+import { ButtonComponent } from './shared/components/button/button.component';
+import { LoaderComponent } from './shared/loader/loader.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CharacterComponent,
-    ComicsComponent,
-    SeriesComponent,
     HomeComponent,
-  
+    ImoveisCadatroComponent,
+    InputFieldComponent,
+    ButtonComponent,
+    LoaderComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    TooltipModule.forRoot(),
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
     CommonModule,
-  
   ],
   providers: [],
   bootstrap: [AppComponent]
